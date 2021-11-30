@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Preferences Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Henrique Maçaneiro's Preferences Form</h1>
+          <p id="description" class="description text-center">A form all about what I like</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input 
+             type="text"
+             name="name" 
+             id="name" 
+             class="form-control"
+             placeholder="Enter your name"
+             required
+            /> 
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your email"
+             required
+            /> 
+          </div>
+          <div class="form-group">
+            <h4 id="form-start">Answer the questions below about Henrique Maçaneiro</h4>
+            <label id="number-label" for="number">What is Maçaneiro's favorite number?<span class="number-clue">(0 to 999)</span></label>
+            <input
+             type="number"
+             name="favorite-number"
+             id="number"
+             min="0"
+             max="999"
+             class="form-control"
+             placeholder="Number"
+             required
+            />
+          </div>
+          <div class="form-group">
+            <p>Which is Maçaneiro's favorite dessert?</p>
+            <select id="dropdown" name="dessert" class="form-control" required>
+              <option disabled selected value>Select a dessert</option>
+              <option value="pudding">Pudding</option>
+              <option value="ice-cream">Rum Raisins Ice Cream</option>
+              <option value="mousse">Chocolate Mousse</option>
+              <option value="banoffee">Banoffee Pie</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Would you say Maçaneiro is a good friend?</p>
+            <label>
+              <input
+                name="friend-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label>
+            <label>
+              <input
+                name="friend-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+                     />Maybe</label>
+            <label>
+              <input
+                name="friend-recommend"
+                value="nah"
+                type="radio"
+                class="input-radio"
+                     />Nah</label>
+            <label>
+              <input
+                name="friend-recommend"
+                value="who-are-you"
+                type="radio"
+                class="input-radio"
+                     />Who are you?</label>
+          </div>
+          <div class="form-group">
+            <p>Which are Maçaneiro's favorite sports?<span class="instruction"> (Check all that apply)</span></p>
+            <label>
+              <input
+               name="sport"
+               value="soccer"
+               type="checkbox"
+               class="input-checkbox"
+                     />Soccer</label>
+            <label>
+              <input
+               name="sport"
+               value="jiu-jitsu"
+               type="checkbox"
+               class="input-checkbox"
+                     />Jiu-jitsu</label>
+            <label>
+              <input
+               name="sport"
+               value="muay-thai"
+               type="checkbox"
+               class="input-checkbox"
+                     />Muay Thai</label>
+            <label>
+              <input
+               name="sport"
+               value="rugby"
+               type="checkbox"
+               class="input-checkbox"
+                     />Rugby</label>
+            <label>
+              <input
+               name="sport"
+               value="tennis"
+               type="checkbox"
+               class="input-checkbox"
+                     />Tennis</label>
+          </div>
+          <div class="form-group">
+            <p>Any special words for your buddy Maçaneiro?</p>
+            <textarea
+             id="special-words"
+             class="input-textarea"
+             name="special-words"
+             placeholder="Enter your comment here..."
+                      ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
